@@ -1,17 +1,20 @@
-import { Image, Text, View } from 'react-native';
-import "./global.css"
+import "./global.css" 
+import { NavigationContainer} from "@react-navigation/native"
+import { createNativeStackNavigator} from '@react-navigation/native-stack'
+
+import Header from './app/Header'
+import Login from './app/login'
+
+const Stack = createNativeStackNavigator();
+
 
 
 export default function App() {
   return (
-    <View className='pt-16 flex flex-row w-full justify-between items-center px-16 bg-green-500'>
-      <Image
-      source = {require('./assets/rubonito.png')}
-      className='w-20 h-20'
-      />
-      <Text className='text-4xl text-blue-800'>
-        Algo a mais
-      </Text>
-    </View>
-  );
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='login'>
+        <Stack.Screen name="login" component={Login} options={ {header: () => <Header/>}}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
