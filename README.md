@@ -9,6 +9,7 @@ A atividade proposta consiste na implementação de algumas telas que abrangem o
 As tecnologias utilizadas serão React Native com Expo.
 
 Para executar a tela deve-se:
+
 (OBS: As dependências devem estar instaladas)
 
 1. Entrar no diretório da tela
