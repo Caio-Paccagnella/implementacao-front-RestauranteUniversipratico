@@ -5,11 +5,23 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 import Header from './app/Header'
 import Login from './app/login'
 
+import { 
+  useFonts, 
+  KumbhSans_400Regular, 
+  KumbhSans_700Bold 
+} from '@expo-google-fonts/kumbh-sans';
+
 const Stack = createNativeStackNavigator();
 
 
 
 export default function App() {
+
+  const [fontsLoaded] = useFonts({
+    // Dê um nome sem espaços aqui. Este é o nome que o Tailwind vai procurar!
+    'KS-Regular': KumbhSans_400Regular,
+    'KS-Bold': KumbhSans_700Bold,
+  });
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='login'>
