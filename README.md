@@ -22,3 +22,11 @@ npx expo start
 
 3. Baixar o aplicativo "Expo go" no dispositivo móvel
 4. Ler o Qr-Code que aparecer na tela
+
+## **O repositório é mantido pelos alunos:** 
+Aluno | RA
+---|---
+Caio César Jordão Paccagnella | ra138549
+Guilherme Jucoski da Silva | ra138642
+Leonardo de Oliveira Godoy | ra139091
+Matheus Henrique Borsato. | ra138246
