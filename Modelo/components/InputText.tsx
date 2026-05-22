@@ -21,7 +21,7 @@ export default function InputText(props: inputProps){
 
     return(
         <View className='flex gap-2'>
-            <View pointerEvents="none" className={`absolute bg-fundo z-10 ${focado ? 'left-4 -top-2 px-2' : 'top-4 left-4 px-0'}`}>
+            <View pointerEvents="none" className={`absolute transition-all ease-in-out bg-fundo z-10 ${focado ? 'left-4 -top-2 px-2' : 'top-4 left-4 px-0'}`}>
                 <Text className='font-KS'>{props.label}</Text>
             </View>
             <View>

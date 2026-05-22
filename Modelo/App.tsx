@@ -26,7 +26,7 @@ export default function App() {
   return (
   <NavigationContainer>
     <Stack.Navigator initialRouteName='fichas'>
-      <Stack.Screen name="login" component={Login} options={{ header: () => <Header/> }} />
+      <Stack.Screen name="login" component={Login} options={{ headerShown: false }} />
       <Stack.Screen name="fichas" component={Fichas} options={{ header: () => <Header/> }} />
     </Stack.Navigator>
 </NavigationContainer>
