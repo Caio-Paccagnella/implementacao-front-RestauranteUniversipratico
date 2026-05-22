@@ -30,7 +30,7 @@ export default function InputText(props: inputProps){
                 onBlur={() => {onBlur(texto.length)}}
                 value={texto}
                 onChangeText={setTexto}
-                secureTextEntry={shown ? true : false}
+                secureTextEntry={shown}
                 >
                 </TextInput>
                 {props.show && <AntDesign name={!shown ? "eye": "eye-invisible"} size={24} color="black" className='self-end absolute right-4 top-3'
