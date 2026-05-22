@@ -4,6 +4,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Header from './app/Header'
 import Login from './app/login'
+import Fichas from './app/Fichas'
 
 import { 
   useFonts, 
@@ -22,11 +23,13 @@ export default function App() {
     'KS-Regular': KumbhSans_400Regular,
     'KS-Bold': KumbhSans_700Bold,
   });
+  if (!fontsLoaded) return null;
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='login'>
-        <Stack.Screen name="login" component={Login} options={ {header: () => <Header/>}}/>
-      </Stack.Navigator>
-    </NavigationContainer>
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName='login'>
+      <Stack.Screen name="login" component={Login} options={{ header: () => <Header/> }} />
+      <Stack.Screen name="fichas" component={Fichas} options={{ header: () => <Header/> }} />
+    </Stack.Navigator>
+</NavigationContainer>
   )
 }
