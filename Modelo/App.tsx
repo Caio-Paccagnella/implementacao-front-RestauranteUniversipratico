@@ -28,6 +28,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='telaPrincipal'>
         <Stack.Screen name="telaPrincipal" component={TelaPrincipal} options={ {header: () => <Header/>}}/>
+        <Stack.Screen name="login" component={Login} options={{ header: () => <Header/> }} />
+        <Stack.Screen name="fichas" component={Fichas} options={{ header: () => <Header/> }} />
       </Stack.Navigator>
     </NavigationContainer>
   )
