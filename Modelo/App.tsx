@@ -4,6 +4,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Header from './app/Header'
 import Login from './app/login'
+import TelaPrincipal from './app/telaPrincipal'
 import Fichas from './app/Fichas'
 
 import { 
@@ -24,11 +25,10 @@ export default function App() {
   });
   if (!fontsLoaded) return null;
   return (
-  <NavigationContainer>
-    <Stack.Navigator initialRouteName='fichas'>
-      <Stack.Screen name="login" component={Login} options={{ headerShown: false }} />
-      <Stack.Screen name="fichas" component={Fichas} options={{ header: () => <Header/> }} />
-    </Stack.Navigator>
-</NavigationContainer>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='telaPrincipal'>
+        <Stack.Screen name="telaPrincipal" component={TelaPrincipal} options={ {header: () => <Header/>}}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
