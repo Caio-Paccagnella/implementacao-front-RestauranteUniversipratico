@@ -26,7 +26,7 @@ export default function App() {
   if (!fontsLoaded) return null;
   return (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName='login'>
+    <Stack.Navigator initialRouteName='fichas'>
       <Stack.Screen name="login" component={Login} options={{ header: () => <Header/> }} />
       <Stack.Screen name="fichas" component={Fichas} options={{ header: () => <Header/> }} />
     </Stack.Navigator>
