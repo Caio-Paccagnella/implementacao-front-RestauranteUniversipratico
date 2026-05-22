@@ -4,6 +4,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Header from './app/Header'
 import Login from './app/login'
+import TelaPrincipal from './app/telaPrincipal'
 
 import { 
   useFonts, 
@@ -24,8 +25,8 @@ export default function App() {
   });
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='login'>
-        <Stack.Screen name="login" component={Login} options={ {header: () => <Header/>}}/>
+      <Stack.Navigator initialRouteName='telaPrincipal'>
+        <Stack.Screen name="telaPrincipal" component={TelaPrincipal} options={ {header: () => <Header/>}}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
